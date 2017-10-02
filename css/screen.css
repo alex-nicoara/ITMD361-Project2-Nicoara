@@ -7,8 +7,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+html {
 
-img {
+}
+
+body {
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+}
+
+img
+video,
+audio {
   display: block;
   max-width: 100%;
 }
