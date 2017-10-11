@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  padding-left: 18em;
+  /*padding-left: 18em;
   padding-right: 18em;
   background-color: blue; /*for formatting testing*/
 }
@@ -85,15 +85,19 @@ nav ul > li > a {
   width: 3em;
   height: 3em;
   padding: 0.75em;
-  background-color: red;
+}
+
+#menu-btn {
+  width: 2em;
+  height: 2em;
+  padding: 1.25em 1.25em;
 }
 
 #myname {
   font-size: 1.5em;
   font-weight: normal;
   color: white;
-  background-color: blue;
-  /*padding: 1.25em 0.75em*/;
+  flex: 1 auto;
 }
 /* == MODULAR STYLES == */
 /* == LAYOUT STYLES == */
