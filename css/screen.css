@@ -16,6 +16,12 @@ body {
 
 }
 
+main {
+  padding-left: 18em;
+  padding-right: 18em;
+  background-color: blue; /*for formatting testing*/
+}
+
 h1,
 h2,
 h3,
@@ -38,6 +44,11 @@ h2 {
   font-size: 2em;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 img
 video,
 audio {
@@ -45,6 +56,33 @@ audio {
   max-width: 100%;
 }
 
+header {
+  background-color: rgb(53,54,56);
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav ul > li {
+  flex: 1 100%;
+  padding: 1em;
+  background-color: rgb(81,82,85);
+  border-top: 2px #444444 solid;
+  text-align: center;
+}
+
+nav ul > li > a {
+  font-size: 1.125em;
+}
+
+
+#myname {
+  font-size: 2em;
+  color: white;
+  padding: 0.75em 0;
+}
 /* == MODULAR STYLES == */
 /* == LAYOUT STYLES == */
 /* == MEDIA QUERIES == */
