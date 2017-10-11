@@ -13,7 +13,7 @@ html {
 }
 
 body {
-
+  height: 100%;
 }
 
 main {
@@ -56,6 +56,18 @@ audio {
   max-width: 100%;
 }
 
+footer {
+  width: 100%;
+  position: absolute;
+  padding: 1.5em 0;
+  text-align: center;
+  background-color: rgb(53,54,56);
+}
+
+footer p {
+  color: white;
+}
+
 header {
   background-color: rgb(53,54,56);
   display: flex;
@@ -93,6 +105,10 @@ nav ul > li > a {
   padding: 1.25em 1.25em;
 }
 
+#menu-btn:hover {
+  cursor: pointer; /* will change once we enable clicking */
+}
+
 #myname {
   font-size: 1.5em;
   font-weight: normal;
@@ -102,3 +118,15 @@ nav ul > li > a {
 /* == MODULAR STYLES == */
 /* == LAYOUT STYLES == */
 /* == MEDIA QUERIES == */
+/* Tablets */
+@media screen and (min-width: 600px) {
+  footer p {
+    padding-left: 1.5em;
+    text-align: left;
+  }
+}
+
+/* Desktop Computers */
+@media screen and (min-width: 800px) {
+
+}
