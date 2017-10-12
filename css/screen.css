@@ -85,15 +85,15 @@ a {
 img
 video,
 audio {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
 footer {
   /* 4.5em tall */
   width: 100 vw;
   padding: 1.3125em;
-  background-color: rgb(53,54,56);
+  background-color: #353639;
   text-align: center;
 }
 
@@ -102,6 +102,37 @@ footer p {
   padding: 0;
 }
 
+header {
+  background-color: #353639;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+nav ul > li {
+  padding: 1.25em;
+  background-color: white;
+  border-bottom: 2px lightgrey solid;
+  text-align: center;
+}
+
+#header-icon {
+  width: 2.75em;
+  height: 2.75em;
+  padding: 0.5em;
+}
+
+#menu-btn {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+#myname {
+  font-size: 1.35em;
+  padding: 0.675em 0.25em;
+  font-weight: normal;
+  color: white;
+}
 /*footer {
   width: 100%;
   position: absolute;
