@@ -10,6 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-family: Arial, sans-serif;
   font-size: 1.125em; /* base = 18px */
+  line-height: 1.222em; /* 22 /18 */
 }
 
 body {
@@ -20,6 +21,9 @@ main {
   /*padding-left: 18em;
   padding-right: 18em;
   background-color: blue; /*for formatting testing*/
+  padding-top: 1.222em;
+  padding-right: 1.222em;
+  padding-left: 1.222em;
 }
 
 h1,
@@ -29,6 +33,12 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  line-height: 1.222em;
+}
+
+p {
+  line-height: 1.222em;
+  padding-bottom: 0.5em;
 }
 
 h1, h2 {
@@ -37,11 +47,33 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3.556em;
+  font-size: 2.369em;
+  line-height: 1.032em;
+  padding-bottom: 0.516em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.777em;
+  line-height: 1.032em;
+  padding-bottom: 0.688em;
+}
+
+ol, ul {
+  padding-bottom: 0.611em;
+}
+
+li ol,
+li ul {
+  padding-top: 0.611em;
+  padding-left: 1.222em;
+}
+
+li {
+  padding-bottom: 0.611em;
+}
+
+li li:last-child {
+  padding-bottom: 0;
 }
 
 a {
@@ -49,6 +81,7 @@ a {
   color: white;
 }
 
+/* Responsive Media */
 img
 video,
 audio {
@@ -57,6 +90,19 @@ audio {
 }
 
 footer {
+  /* 4.5em tall */
+  width: 100 vw;
+  padding: 1.3125em;
+  background-color: rgb(53,54,56);
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  padding: 0;
+}
+
+/*footer {
   width: 100%;
   position: absolute;
   padding: 1.5em 0;
@@ -82,7 +128,7 @@ nav ul {
 
 nav ul > li {
   flex: 1 100%;
-  padding: 1em;
+  padding: 1.25em;
   background-color: white;
   border-bottom: 2px lightgrey solid;
   text-align: center;
@@ -94,34 +140,36 @@ nav ul > li > a {
 }
 
 #header-icon {
-  width: 3em;
-  height: 3em;
-  padding: 0.75em;
+  width: 2.75em;
+  height: 2.75em;
+  padding: 1em;
 }
 
 #menu-btn {
-  width: 2em;
-  height: 2em;
-  padding: 1.25em 1.25em;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1.5em;
 }
 
 #menu-btn:hover {
-  cursor: pointer; /* will change once we enable clicking */
+  cursor: pointer;
 }
 
 #myname {
-  font-size: 1.5em;
+  font-size: 1.125em;
   font-weight: normal;
   color: white;
   flex: 1 auto;
-}
+}*/
+
 /* == MODULAR STYLES == */
+
 /* == LAYOUT STYLES == */
+
 /* == MEDIA QUERIES == */
 /* Tablets */
 @media screen and (min-width: 600px) {
-  footer p {
-    padding-left: 1.5em;
+  footer {
     text-align: left;
   }
 }
