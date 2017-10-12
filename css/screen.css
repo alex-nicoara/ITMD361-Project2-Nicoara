@@ -38,7 +38,7 @@ h6 {
 
 p {
   line-height: 1.222em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.9em;
 }
 
 h1, h2 {
@@ -54,8 +54,12 @@ h1 {
 
 h2 {
   font-size: 1.777em;
-  line-height: 1.032em;
+  line-height: 0.666em;
   padding-bottom: 0.688em;
+}
+
+h3 {
+  padding-bottom: 0.4em;
 }
 
 ol, ul {
@@ -78,7 +82,7 @@ li li:last-child {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #879eb0;
 }
 
 /* Responsive Media */
@@ -109,11 +113,32 @@ header {
   align-items: center;
 }
 
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 nav ul > li {
-  padding: 1.25em;
+  padding: 0;
   background-color: white;
   border-bottom: 2px lightgrey solid;
   text-align: center;
+  color: #353639;
+  flex: 1 100%;
+}
+
+nav ul > li, nav ul > li > a {
+  color: #353639;
+}
+
+nav ul > li > a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.25em 0;
+}
+
+nav ul > li > a:active {
+  background-color: grey;
 }
 
 #header-icon {
@@ -125,61 +150,7 @@ nav ul > li {
 #menu-btn {
   width: 1.5em;
   height: 1.5em;
-}
-
-#myname {
-  font-size: 1.35em;
-  padding: 0.675em 0.25em;
-  font-weight: normal;
-  color: white;
-}
-/*footer {
-  width: 100%;
-  position: absolute;
-  padding: 1.5em 0;
-  text-align: center;
-  background-color: rgb(53,54,56);
-}
-
-footer p {
-  color: white;
-}
-
-header {
-  background-color: rgb(53,54,56);
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-nav ul > li {
-  flex: 1 100%;
-  padding: 1.25em;
-  background-color: white;
-  border-bottom: 2px lightgrey solid;
-  text-align: center;
-}
-
-nav ul > li > a {
-  font-size: 1.125em;
-  color: rgb(53,54,56);
-}
-
-#header-icon {
-  width: 2.75em;
-  height: 2.75em;
-  padding: 1em;
-}
-
-#menu-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1.5em;
+  padding: 1.125em;
 }
 
 #menu-btn:hover {
@@ -187,12 +158,20 @@ nav ul > li > a {
 }
 
 #myname {
-  font-size: 1.125em;
+  font-size: 1.35em;
+  padding: 0 0.25em;
   font-weight: normal;
   color: white;
   flex: 1 auto;
-}*/
+}
 
+#site-desc {
+  display: none;
+  font-size: 1.35em;
+  padding: 0 1em;
+  font-weight: normal;
+  color: white;
+}
 /* == MODULAR STYLES == */
 
 /* == LAYOUT STYLES == */
@@ -200,8 +179,20 @@ nav ul > li > a {
 /* == MEDIA QUERIES == */
 /* Tablets */
 @media screen and (min-width: 600px) {
+  nav ul > li {
+    flex: 1 auto;
+  }
+
   footer {
     text-align: left;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  #site-desc {
+    display: flex;
   }
 }
 
