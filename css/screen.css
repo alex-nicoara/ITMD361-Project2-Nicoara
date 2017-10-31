@@ -20,7 +20,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125em;
 }
 
 h1,
@@ -29,5 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.777em;
 }
