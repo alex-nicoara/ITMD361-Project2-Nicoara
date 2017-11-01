@@ -220,7 +220,13 @@ footer ul {
   2. concerned with adjustments to base styles,
       spacing, color, etc. etc.
 */
+.closed-nav {
+  display: none;
+}
 
+.opened-nav {
+  display: flex;
+}
 
 .footer-button {
   display: inline-block;
