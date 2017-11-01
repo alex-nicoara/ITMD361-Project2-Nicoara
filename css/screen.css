@@ -259,7 +259,6 @@ footer ul {
 
 .boxed-link-preview h2 {
   font-weight: 400;
-  display: none;
 }
 
 .boxed-link-preview img {
@@ -267,17 +266,16 @@ footer ul {
   width: auto;
   height: 4.8125em;
   padding-bottom: 1.375em;
-  display: none;
 }
 
 .boxed-link-preview p {
-  display: none;
+  padding: 0 0 1.375em 0;
 }
 
 .boxed-link-preview a {
   display: inline-block;
-  border: 2px white solid;
-  padding: 0.875em 1.75em;
+  outline: 2px white solid;
+  padding: 0.6875em 1.375em;
 }
 
 .boxed-link-preview a:visited {
