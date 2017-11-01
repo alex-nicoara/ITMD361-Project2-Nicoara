@@ -105,7 +105,6 @@ audio {
 
 header {
   background-color: #2c3031;
-  background-color: blue;
   text-align: center;
   padding: 1.375em 1.375em 0.63636363em 1.375em; /* 22px /16px = 1.375em */
 }
@@ -228,6 +227,10 @@ footer ul {
   display: flex;
 }
 
+.active {
+  box-shadow: inset 0 -5px 0 #5ac4c2;
+}
+
 .footer-button {
   display: inline-block;
   width: 11em;
@@ -255,6 +258,26 @@ footer ul {
   3. Organized by Base, Layout, Module, State
 */
 @media screen and (min-width: 600px) {
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  nav ul > li > a {
+    background-color: inherit;
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+    outline: none;
+  }
+
+  #nav {
+    display: flex;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
   footer {
     display: flex;
     flex-flow: row wrap;
