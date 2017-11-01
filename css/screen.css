@@ -53,7 +53,42 @@ h2 {
 }
 
 a, p {
-  padding-bottom: 1.375em; /* 22px / 16px */
+  padding-bottom: 1.375em; /* 22px / 16px = 1.375em */
+}
+
+ol, ul {
+  padding-bottom: 0.6875em; /* 11px / 16px = 0.6875em */
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li ol,
+li ul {
+  padding-top: 0.6875em; /* 11px /16px = 0.6875em */
+  padding-left: 1.375em; /* 22px / 16px = 1.375em */
+  padding-bottom: 0;
+}
+
+li ol {
+  list-style-type: lower-alpha;
+}
+
+li li ol {
+  list-style-type: lower-roman;
+}
+
+li {
+  padding-bottom: 0.6875em; /* 11px /16px = 0.6875em */
+}
+
+li li:last-child {
+  padding-bottom: 0;
 }
 
 /* Responsive Media */
