@@ -56,6 +56,10 @@ a, p {
   padding-bottom: 1.375em; /* 22px / 16px = 1.375em */
 }
 
+a, a:visited {
+  text-decoration: none;
+}
+
 ol, ul {
   padding-bottom: 0.6875em; /* 11px / 16px = 0.6875em */
 }
@@ -102,4 +106,96 @@ audio {
 footer {
   background-color: #2c3031;
   color: white;
+  text-align: center;
+}
+
+footer section {
+  padding: 1.375em;
+}
+
+footer h2 {
+  font-size: 1em; /* 16px / 16px = 1em */
+  line-height: 1.375em; /* 22px / 16px = 1.375em */
+  padding-bottom: 1.375em; /* 22px / 16 = 1.375em */
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+/* Layout Styles */
+/*  Hint: these tend to be
+    1. IDs; but also classes, sometimes
+    2. concerned with layout and spatial
+       relationships
+*/
+#social-media-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-bottom: 0;
+}
+
+#social-media-links li {
+  padding-bottom: 0;
+}
+
+#copy-rights {
+  padding-top: 1.375em;
+}
+
+/* Modular Styles */
+/*
+  Repeating style patterns.
+  Hint: these tend to be:
+  1. classes and relationship selectors
+  2. concerned with adjustments to base styles,
+      spacing, color, etc. etc.
+*/
+.footer-button {
+  display: inline-block;
+  width: 11em;
+  padding: 1.375em 0; /* 22px 66px => 1.375em 4.125em */
+  background-color: #5ac4c2;
+  color: white;
+}
+
+.footer-button:active {
+  background-color: #ff9f17;
+}
+
+.sm-icon {
+  width: 2.75em; /* 44px / 16px = 2.75em */
+  height: 2.75em; /* 44px / 16px = 2.75em */
+}
+
+/* State Styles */
+/*
+  States of the browser and user access
+  conditions.
+  Hint: these tend to be:
+  1. Driven by media queries
+  2. Influenced by JavaScript
+  3. Organized by Base, Layout, Module, State
+*/
+@media screen and (min-width: 600px) {
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 2.75em;
+  }
+
+  footer section {
+    width: 20vw;
+  }
+
+  #copy-rights {
+    padding-top: 2.75em;
+    flex: 1 0 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
 }
