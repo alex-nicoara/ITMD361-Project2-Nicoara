@@ -105,8 +105,38 @@ audio {
 
 header {
   background-color: #2c3031;
+  background-color: blue;
   text-align: center;
-  padding: 1.375em; /* 22px /16px = 1.375em */
+  padding: 1.375em 1.375em 0.63636363em 1.375em; /* 22px /16px = 1.375em */
+}
+
+nav {
+  background-color: yellow;
+  padding: 1.375em 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul > li {
+  padding: 0;
+}
+
+nav ul > li > a {
+  display: block;
+  color: white;
+  background-color: #5ac4c2;
+  outline: 0.0625em white solid;
+  padding: 1.375em;
+}
+
+nav ul > li > a:active {
+  background-color: #ff9f17;
 }
 
 footer {
@@ -139,14 +169,28 @@ footer ul {
   width: 5.5em;
   height: 5.5em;
   margin: auto;
-  padding-bottom: 0.6875em;
+  padding-bottom: 0.63636363em; /* 28px/2px / 16px = 0.63636363em */
 }
 
 #myname {
-  background-color: red;
   color: white;
   font-size: 1.75em; /* 28px / 16px = 1.75em */
-  padding: 0; /* 22px / 28px = 0.785714 */
+  line-height: 0.7857142em; /* 22px / 28px = 0.7857142 */
+  padding-bottom: 0; /* 1 - 0.63636363 */
+}
+
+#menu-btn {
+  padding: 0;
+  border: none;
+  background:none;
+  height: 2.75em;
+  margin: 0;
+  display: none;
+}
+
+#menu-icon {
+  width: auto;
+  height: 100%;
 }
 
 #social-media-links {
