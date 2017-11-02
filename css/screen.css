@@ -235,7 +235,7 @@ footer ul {
 #social-media-links {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-bottom: 0;
 }
 
@@ -364,7 +364,7 @@ footer ul {
   footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 2.75em;
   }
 
@@ -402,7 +402,7 @@ footer ul {
   }
 
   #jumbo-banner h1 {
-    padding-bottom: 0.22916666; /* 11px / 48px */
+    padding-bottom: 0.22916666em; /* 11px / 48px */
   }
 
   #jumbo-banner p {
