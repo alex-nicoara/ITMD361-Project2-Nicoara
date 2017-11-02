@@ -52,6 +52,11 @@ h2 {
   padding-bottom: 0.6875em; /* 22px / 32px = 0.6875em */
 }
 
+h3 {
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  padding-bottom: 0.9166666em; /* 22px / 32px = 0.6875em */
+}
+
 a, p {
   padding-bottom: 1.375em; /* 22px / 16px = 1.375em */
 }
@@ -149,8 +154,6 @@ strong {
   font-weight: 700;
 }
 
-
-
 footer {
   background-color: #2c3031;
   color: white;
@@ -222,7 +225,7 @@ footer ul {
   padding-bottom: 1.375em;
 }
 
-#my-work h1 {
+#my-work h2 {
   padding-bottom: 0.6875em;
 }
 
@@ -242,11 +245,9 @@ footer ul {
   list-style-type: none;
 }
 
-#education li > ul > li {
+#education li > ul > li, #experience li > ul > li {
   list-style-type: disc;
 }
-
-
 
 #social-media-links {
   display: flex;
@@ -289,7 +290,9 @@ footer ul {
   padding: 1.375em;
 }
 
-.boxed-link-preview h2 {
+.boxed-link-preview h3 {
+  font-size: 2em; /* 32px / 16px = 2em */
+  padding-bottom: 0.6875em; /* 22px / 32px = 0.6875em */
   font-weight: 400;
 }
 
@@ -373,7 +376,7 @@ footer ul {
     display: block;
   }
 
-  #my-work h1 {
+  #my-work h2 {
     padding-bottom: 0.6875em;
   }
 
@@ -441,7 +444,7 @@ footer ul {
     grid-gap: 1.375em;
   }
 
-  #my-work h1 {
+  #my-work h2 {
     padding-bottom: 0em;
   }
 
