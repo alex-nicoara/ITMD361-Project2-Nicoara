@@ -88,7 +88,7 @@ li li ol {
 }
 
 li {
-  padding-bottom: 0.6875em; /* 11px /16px = 0.6875em */
+  padding-bottom: 0.6875em; /* 11px / 16px = 0.6875em */
 }
 
 li li:last-child {
@@ -144,6 +144,12 @@ main {
 main section {
   margin-bottom: 1.375em;
 }
+
+strong {
+  font-weight: 700;
+}
+
+
 
 footer {
   background-color: #2c3031;
@@ -231,6 +237,16 @@ footer ul {
 #my-projects {
   background-color: #407851;
 }
+
+#resume ul > li {
+  list-style-type: none;
+}
+
+#education li > ul > li {
+  list-style-type: disc;
+}
+
+
 
 #social-media-links {
   display: flex;
@@ -407,6 +423,14 @@ footer ul {
 
   #jumbo-banner p {
     padding-bottom: 0;
+  }
+
+  article {
+    grid-column: 1/4;
+  }
+
+  article h3 {
+    padding-bottom: 0.6875em;
   }
 
   #my-work {
