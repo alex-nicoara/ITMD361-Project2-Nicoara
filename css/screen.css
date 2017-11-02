@@ -138,7 +138,7 @@ nav ul > li > a:active {
 }
 
 main {
-  padding: 1.375em;
+  padding: 2.75em 1.375em 1.375em 1.375em;
 }
 
 main section {
