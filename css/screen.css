@@ -204,6 +204,22 @@ footer ul {
   height: 2.75em;
 }
 
+#jsmall-image {
+  display: block;
+}
+
+#jlarge-image {
+  display: none;
+}
+
+#jsmall-image, #jlarge-image {
+  padding-bottom: 1.375em;
+}
+
+#my-work h1 {
+  padding-bottom: 0.6875em;
+}
+
 #school-work {
   background-color: #ff9e00;
 }
@@ -333,6 +349,18 @@ footer ul {
     display: none;
   }
 
+  #jsmall-image {
+    display: none;
+  }
+
+  #jlarge-image {
+    display: block;
+  }
+
+  #my-work h1 {
+    padding-bottom: 0.6875em;
+  }
+
   footer {
     display: flex;
     flex-flow: row wrap;
@@ -351,5 +379,64 @@ footer ul {
 }
 
 @media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.375em;
+  }
 
+  #jumbo-banner {
+    grid-column: 1/4;
+  }
+
+  #jumbo-banner {
+    position: relative;
+  }
+
+  #jumbo-banner figcaption {
+    color: white;
+    padding: 1.375em;
+    margin-top: -12.375em;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+  }
+
+  #jumbo-banner h1 {
+    padding-bottom: 0.22916666; /* 11px / 48px */
+  }
+
+  #jumbo-banner p {
+    padding-bottom: 0;
+  }
+
+  #my-work {
+    grid-column: 1/4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.375em;
+  }
+
+  #my-work h1 {
+    padding-bottom: 0em;
+  }
+
+  #school-work {
+    grid-column: 1/2;
+  }
+
+  #graphics-work {
+    grid-column: 2/3;
+  }
+
+  #my-projects {
+    grid-column: 3/4;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  main {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
