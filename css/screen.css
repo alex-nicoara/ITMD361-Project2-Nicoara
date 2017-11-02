@@ -439,4 +439,15 @@ footer ul {
     padding-left: 20%;
     padding-right: 20%;
   }
+
+  #jumbo-banner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1660px){
+  #jumbo-banner figcaption {
+    margin-top: -11em;
+  }
 }
