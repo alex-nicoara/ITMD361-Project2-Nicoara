@@ -204,9 +204,9 @@ $.noConflict();
   }
 
   function unhidejs() {
-    document.getElementByClass('tboard').removeClass('hide');
-    document.getElementById('tt-reset').removeClass('hide');
-    document.getElementById('tboard-status').addClass('hide');
+    $('.tboard').removeClass('hide');
+    $('#tt-reset').removeClass('hide');
+    $('#tboard-status').addClass('hide');
   }
 
   // actions
