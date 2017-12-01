@@ -261,6 +261,13 @@ footer ul {
   padding-top: 1.375em;
 }
 
+#tboard-status {
+  border: 0.25em #b25757 solid;
+  color: #b25757;
+  padding: 1.125em;
+  font-weight: 700;
+}
+
 #tt-reset {
   padding: 0.5em;
   font-size: 1.125em;
@@ -407,6 +414,10 @@ footer ul {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
+.hide {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   nav ul {
     flex-flow: row wrap;
