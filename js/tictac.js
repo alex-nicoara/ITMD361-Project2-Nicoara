@@ -203,10 +203,26 @@ $.noConflict();
     return;
   }
 
+  function unhidejs() {
+    document.getElementByClass('tboard').removeClass('hide');
+    document.getElementById('tt-reset').removeClass('hide');
+    document.getElementById('tboard-status').addClass('hide');
+  }
+
   // actions
+  unhidejs();
   resetGame();
 
   // event listeners
-
+  document.getElementById('ts-open-1-1').addEventListener('mouseup', function(e){playerMove(1,1)});
+  document.getElementById('ts-open-2-1').addEventListener('mouseup', function(e){playerMove(2,1)});
+  document.getElementById('ts-open-3-1').addEventListener('mouseup', function(e){playerMove(3,1)});
+  document.getElementById('ts-open-1-2').addEventListener('mouseup', function(e){playerMove(1,2)});
+  document.getElementById('ts-open-2-2').addEventListener('mouseup', function(e){playerMove(2,2)});
+  document.getElementById('ts-open-3-2').addEventListener('mouseup', function(e){playerMove(3,2)});
+  document.getElementById('ts-open-1-3').addEventListener('mouseup', function(e){playerMove(1,3)});
+  document.getElementById('ts-open-2-3').addEventListener('mouseup', function(e){playerMove(2,3)});
+  document.getElementById('ts-open-3-3').addEventListener('mouseup', function(e){playerMove(3,3)});
+  document.getElementById('tt-reset').addEventListener('click', resetGame);
 
 })(jQuery);
