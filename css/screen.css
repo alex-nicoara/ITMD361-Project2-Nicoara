@@ -214,12 +214,8 @@ footer ul {
   display: block;
 }
 
-#jlarge-image {
-  display: none;
-}
-
-#jsmall-image, #jlarge-image {
-  padding-bottom: 1.375em;
+#jumbo-title {
+  padding-top: 0.6875em;
 }
 
 #my-work h2 {
@@ -438,7 +434,7 @@ footer ul {
 .fadeOut {
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: fadeOut;
-  -webkit-animation-duration: 0.5s;  
+  -webkit-animation-duration: 0.5s;
   animation-fill-mode: both;
   animation-name: fadeOut;
   animation-duration: 0.5s;
@@ -471,14 +467,6 @@ footer ul {
 
   #menu-btn {
     display: none;
-  }
-
-  #jsmall-image {
-    display: none;
-  }
-
-  #jlarge-image {
-    display: block;
   }
 
   #my-work h2 {
@@ -514,12 +502,16 @@ footer ul {
     position: relative;
   }
 
+  #jumbo-title {
+    padding-top: 0;
+  }
+
   #jumbo-banner figcaption {
     color: white;
     padding: 1.375em;
-    margin-top: -12.375em;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
+    bottom: 0;
   }
 
   #jumbo-banner h1 {
