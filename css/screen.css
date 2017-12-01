@@ -405,6 +405,7 @@ footer ul {
 .win-square {
   background-color: grey;
 }
+
 /* State Styles */
 /*
   States of the browser and user access
@@ -414,6 +415,35 @@ footer ul {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fadeIn {
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
+.fadeOut {
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 0.5s;  
+  animation-fill-mode: both;
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+}
+
 .hide {
   display: none;
 }
