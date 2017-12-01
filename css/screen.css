@@ -261,6 +261,14 @@ footer ul {
   padding-top: 1.375em;
 }
 
+#tt-reset {
+  padding: 0.5em;
+  font-size: 1.125em;
+}
+
+#trow-3 > li {
+  border-bottom: 0.25em black solid;
+}
 /* Modular Styles */
 /*
   Repeating style patterns.
@@ -331,6 +339,50 @@ footer ul {
   height: 2.75em; /* 44px / 16px = 2.75em */
 }
 
+.trow {
+  display: flex;
+}
+
+.tsquare {
+  width: 6.25em;
+  height: 6.25em;
+  border-top: 0.25em black solid;
+  border-left: 0.25em black solid;
+  background-color: lightgrey;
+}
+
+.tsquare > button {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.ts-open {
+  background: transparent;
+}
+
+.ts-open:hover {
+  cursor: pointer;
+  background: yellow;
+}
+
+.trow > li:last-child {
+  border-right: 0.25em black solid;
+}
+
+.player-marker {
+  background: url('../img/x-s.png');
+  background-size: 100%;
+}
+
+.cpu-marker {
+  background: url('../img/o-s.png');
+  background-size: 100%;
+}
+
+.win-square {
+  background-color: grey;
+}
 /* State Styles */
 /*
   States of the browser and user access
