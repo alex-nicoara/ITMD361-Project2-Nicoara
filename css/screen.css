@@ -101,7 +101,7 @@ li {
   padding-bottom: 0.6875em; /* 11px / 16px = 0.6875em */
 }
 
-nav > * {
+nav > li > ul > li > a {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -149,8 +149,6 @@ nav ul > li > a:active {
 
 main {
   padding: 2.75em 1.375em 1.375em 1.375em;
-  z-index: -1;
-  position: relative;
 }
 
 main section {
@@ -218,6 +216,10 @@ footer ul {
   margin: auto;
   width: auto;
   height: 2.75em;
+}
+
+#jumbo-banner {
+  z-index: -1;
 }
 
 #jsmall-image {
