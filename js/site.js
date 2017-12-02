@@ -4,11 +4,13 @@ $.noConflict();
 (function($) {
   // variables
   var menuToggle = document.getElementById("menu-btn");
+  var aboutHead = document.getElementById("about-link");
+  var workHead = document.getElementById("my-work-link");
   var jumboImgIndex = -1;
   var bannerImages =
     [{alt: "Giant Beach Chair",
      src: "img/beach-chair.png",
-     title: "Welcome!",
+     title: "Welcome",
      par: "My name is Alexander Nicoara. I am a passionate and creative " +
           "web developer who enjoys coding, technology, and " +
           "computers."
@@ -31,7 +33,7 @@ $.noConflict();
      {alt: "Campus Cru Group Photo",
      src: "img/cru.png",
      title: "Campus Cru",
-     par: "Cru is a Christian faith based organization I've been involved with " + 
+     par: "Cru is a Christian faith based organization I've been involved with " +
           "during my 4 1/2 years at Illinois Tech. I've experienced a lot of " +
           "personal growth while in Cru and made lots of great friends."
      }];
@@ -79,6 +81,18 @@ $.noConflict();
     } else {
       $('#nav').removeClass("opened-nav").addClass("closed-nav");
     }
+    return;
+  }
+
+  function toggleSubMenu(dropdownhead) {
+    if($(dropdownhead).hasClass('hide')) {
+      $('#nav > li > ul').removeClass('showFlex').addClass('hide');
+      $(dropdownhead).removeClass('hide').addClass('showFlex');
+    } else {
+      $('#nav > li > ul').removeClass('showFlex').addClass('hide');
+      $(dropdownhead).removeClass('showFlex').addClass('hide');
+    }
+    return;
   }
 
   // load first carousel image
@@ -89,4 +103,6 @@ $.noConflict();
 
   // event listeners
   menuToggle.addEventListener("click", toggleNav, false);
+  aboutHead.addEventListener("click", function(){toggleSubMenu("#drop-about")}, false);
+  workHead.addEventListener("click", function(){toggleSubMenu("#drop-work")}, false);
 })(jQuery);
