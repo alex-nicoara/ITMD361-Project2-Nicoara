@@ -133,6 +133,7 @@ header {
 nav {
   background-color: #2c3031;
   text-align: center;
+  z-index: 99;
 }
 
 nav ul {
@@ -148,6 +149,8 @@ nav ul > li > a:active {
 
 main {
   padding: 2.75em 1.375em 1.375em 1.375em;
+  z-index: -1;
+  position: relative;
 }
 
 main section {
@@ -503,12 +506,11 @@ footer ul {
   }
 
   .sublink {
-    background-color: #2c3031;
-    opacity: 0.85;
+    background-color: #525556;
   }
 
   .sublink:hover {
-    background-color: #525556;
+    background-color: #747677;
   }
 
   #menu-btn {
