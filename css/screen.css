@@ -101,7 +101,7 @@ li {
   padding-bottom: 0.6875em; /* 11px / 16px = 0.6875em */
 }
 
-nav > li > ul > li > a {
+nav > * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
