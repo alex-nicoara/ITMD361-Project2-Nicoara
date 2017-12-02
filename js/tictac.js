@@ -8,6 +8,9 @@ $.noConflict();
   var hasWon;
   var board;
   var spaces_available;
+  var menuToggle = document.getElementById("menu-btn");
+  var aboutHead = document.getElementById("about-link");
+  var workHead = document.getElementById("my-work-link");
 
   // functions
   function setOrder() {
@@ -209,6 +212,29 @@ $.noConflict();
     $('#tboard-status').addClass('hide');
   }
 
+  // Toggles Menu in Mobile
+  function toggleNav() {
+    var currentClass = $('#nav').attr('class');
+
+    if(currentClass === "closed-nav") {
+      $('#nav').removeClass("closed-nav").addClass("opened-nav");
+    } else {
+      $('#nav').removeClass("opened-nav").addClass("closed-nav");
+    }
+    return;
+  }
+
+  function toggleSubMenu(dropdownhead) {
+    if($(dropdownhead).hasClass('hide')) {
+      $('#nav > li > ul').removeClass('showFlex').addClass('hide');
+      $(dropdownhead).removeClass('hide').addClass('showFlex');
+    } else {
+      $('#nav > li > ul').removeClass('showFlex').addClass('hide');
+      $(dropdownhead).removeClass('showFlex').addClass('hide');
+    }
+    return;
+  }
+
   // actions
   unhidejs();
   resetGame();
@@ -224,5 +250,8 @@ $.noConflict();
   document.getElementById('ts-open-2-3').addEventListener('mouseup', function(e){playerMove(2,3)});
   document.getElementById('ts-open-3-3').addEventListener('mouseup', function(e){playerMove(3,3)});
   document.getElementById('tt-reset').addEventListener('click', resetGame);
+  menuToggle.addEventListener("click", toggleNav, false);
+  aboutHead.addEventListener("click", function(){toggleSubMenu("#drop-about")}, false);
+  workHead.addEventListener("click", function(){toggleSubMenu("#drop-work")}, false);
 
 })(jQuery);
