@@ -9,34 +9,34 @@ $.noConflict();
   var jumboImgIndex = -1;
   var bannerImages =
     [{alt: "Giant Beach Chair",
-     src: "img/beach-chair.png",
-     title: "Welcome",
-     par: "My name is Alexander Nicoara. I am a passionate and creative " +
+      src: "img/beach-chair.png",
+      title: "Welcome",
+      par: "My name is Alexander Nicoara. I am a passionate and creative " +
           "web developer who enjoys coding, technology, and " +
           "computers."
-     },
-     {alt: "Jedi knight with a lightsaber",
-     src: "img/jedi-knight.png",
-     title: "Work Portfolio",
-     par: "On my website, you can browse some of the work I've done in " +
+    },
+    {alt: "Jedi knight with a lightsaber",
+      src: "img/jedi-knight.png",
+      title: "Work Portfolio",
+      par: "On my website, you can browse some of the work I've done in " +
           "both coding and design. I'm very experienced in Photoshop & " +
           "HTML, CSS, and JavaScript. I've also worked with SQL databases " +
           "and Java."
-     },
-     {alt: "Fraternity Group Photo",
-     src: "img/fraternity.png",
-     title: "Fraternity",
-     par: "Aside from school, I am very involved with my Fraternity. This " +
+    },
+    {alt: "Fraternity Group Photo",
+      src: "img/fraternity.png",
+      title: "Fraternity",
+      par: "Aside from school, I am very involved with my Fraternity. This " +
           "a group picture of all the current brothers and new members in " +
           "our chapter."
-     },
-     {alt: "Campus Cru Group Photo",
-     src: "img/cru.png",
-     title: "Campus Cru",
-     par: "Cru is a Christian faith based organization I've been involved with " +
+    },
+    {alt: "Campus Cru Group Photo",
+      src: "img/cru.png",
+      title: "Campus Cru",
+      par: "Cru is a Christian faith based organization I've been involved with " +
           "during my 4 1/2 years at Illinois Tech. I've experienced a lot of " +
           "personal growth while in Cru and made lots of great friends."
-     }];
+    }];
 
   // functions
   function rotateJumboImg() {
@@ -46,7 +46,7 @@ $.noConflict();
     }
 
     fadeOut();
-    setTimeout(function(){jumbo_setFig(jumboImgIndex)}, 550);
+    setTimeout(function(){jumbo_setFig(jumboImgIndex);}, 550);
     return;
   }
 
@@ -103,6 +103,6 @@ $.noConflict();
 
   // event listeners
   menuToggle.addEventListener("click", toggleNav, false);
-  aboutHead.addEventListener("click", function(){toggleSubMenu("#drop-about")}, false);
-  workHead.addEventListener("click", function(){toggleSubMenu("#drop-work")}, false);
+  aboutHead.addEventListener("click", function(){toggleSubMenu("#drop-about");}, false);
+  workHead.addEventListener("click", function(){toggleSubMenu("#drop-work");}, false);
 })(jQuery);
