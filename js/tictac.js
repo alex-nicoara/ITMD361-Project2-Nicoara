@@ -250,8 +250,8 @@ $.noConflict();
   document.getElementById('ts-open-2-3').addEventListener('mouseup', function(e){playerMove(2,3)});
   document.getElementById('ts-open-3-3').addEventListener('mouseup', function(e){playerMove(3,3)});
   document.getElementById('tt-reset').addEventListener('click', resetGame);
-  menuToggle.addEventListener("click", toggleNav, false);
-  aboutHead.addEventListener("click", function(){toggleSubMenu("#drop-about")}, false);
-  workHead.addEventListener("click", function(){toggleSubMenu("#drop-work")}, false);
+  menuToggle.addEventListener("click", toggleNav);
+  aboutHead.addEventListener("click", function(){toggleSubMenu("#drop-about")});
+  workHead.addEventListener("click", function(){toggleSubMenu("#drop-work")});
 
 })(jQuery);
