@@ -101,13 +101,6 @@ li {
   padding-bottom: 0.6875em; /* 11px / 16px = 0.6875em */
 }
 
-nav > * {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 nav ul > li {
   padding: 0;
 }
@@ -343,6 +336,10 @@ footer ul {
 
 .boxed-link-preview a:visited {
   color: white;
+}
+
+.fav-list {
+  margin-left: 1em;
 }
 
 .footer-button {
