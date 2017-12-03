@@ -13,7 +13,7 @@ $.noConflict();
       title: "Welcome",
       par: "My name is Alexander Nicoara. I am a passionate and creative " +
           "web developer who enjoys coding, technology, and " +
-          "computers."
+          "computers. This is my website."
     },
     {alt: "Jedi knight with a lightsaber",
       src: "img/jedi-knight.png",

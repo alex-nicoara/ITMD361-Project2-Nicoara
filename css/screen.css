@@ -225,10 +225,6 @@ footer ul {
   height: 2.75em;
 }
 
-#jumbo-banner {
-  z-index: -1;
-}
-
 #jsmall-image {
   display: block;
 }
@@ -525,6 +521,11 @@ footer ul {
 
   #menu-btn {
     display: none;
+  }
+
+  #jumbo-banner {
+    z-index: -1;
+    position: relative;
   }
 
   #my-work h2 {
