@@ -105,6 +105,20 @@ nav ul > li {
   padding: 0;
 }
 
+.tboard {
+  padding-bottom: 2em;
+}
+
+.tboard > li {
+  padding: 0;
+  list-style-type: none;
+}
+
+.trow > li {
+  list-style-type: none;
+  padding: 0;
+}
+
 li li:last-child {
   padding-bottom: 0;
 }
@@ -239,8 +253,16 @@ footer ul {
   background-color: #407851;
 }
 
+.trow > li:last-child {
+  border-right: 0.25em black solid;
+}
+
 #social-media-links li {
   padding-bottom: 0;
+}
+
+#trow-3 > li {
+  border-bottom: 0.25em black solid;
 }
 
 #resume ul > li {
@@ -274,9 +296,6 @@ footer ul {
   font-size: 1.125em;
 }
 
-#trow-3 > li {
-  border-bottom: 0.25em black solid;
-}
 /* Modular Styles */
 /*
   Repeating style patterns.
@@ -359,22 +378,8 @@ footer ul {
   height: 2.75em; /* 44px / 16px = 2.75em */
 }
 
-.tboard {
-  padding-bottom: 2em;
-}
-
-.tboard > li {
-  padding: 0;
-  list-style-type: none;
-}
-
 .trow {
   display: flex;
-  padding: 0;
-}
-
-.trow > li {
-  list-style-type: none;
   padding: 0;
 }
 
@@ -401,17 +406,13 @@ footer ul {
   background: yellow;
 }
 
-.trow > li:last-child {
-  border-right: 0.25em black solid;
-}
-
 .player-marker {
-  background: url('../img/x-s.png');
+  background: url("../img/x-s.png");
   background-size: 100%;
 }
 
 .cpu-marker {
-  background: url('../img/o-s.png');
+  background: url("../img/o-s.png");
   background-size: 100%;
 }
 
@@ -429,31 +430,39 @@ footer ul {
   3. Organized by Base, Layout, Module, State
 */
 
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .fadeIn {
   -webkit-animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
+  -webkit-animation-name: fadein;
   -webkit-animation-duration: 0.5s;
   animation-fill-mode: both;
-  animation-name: fadeIn;
+  animation-name: fadein;
   animation-duration: 0.5s;
 }
 
 .fadeOut {
   -webkit-animation-fill-mode: both;
-  -webkit-animation-name: fadeOut;
+  -webkit-animation-name: fadeout;
   -webkit-animation-duration: 0.5s;
   animation-fill-mode: both;
-  animation-name: fadeOut;
+  animation-name: fadeout;
   animation-duration: 0.5s;
 }
 
@@ -469,7 +478,9 @@ footer ul {
   display: block;
 }
 
+/* stylelint-disable */
 @media screen and (min-width: 600px) {
+  /* stylelint-enable */
   nav ul {
     flex-flow: row wrap;
     justify-content: center;
@@ -537,7 +548,9 @@ footer ul {
   }
 }
 
+/* stylelint-disable */
 @media screen and (min-width: 800px) {
+  /* stylelint-enable */
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -601,7 +614,9 @@ footer ul {
   }
 }
 
+/* stylelint-disable */
 @media screen and (min-width: 1024px) {
+  /* stylelint-enable */
   main {
     padding-left: 20%;
     padding-right: 20%;
@@ -613,7 +628,9 @@ footer ul {
   }
 }
 
+/* stylelint-disable */
 @media screen and (min-width: 1660px) {
+  /* stylelint-enable */
   #jumbo-banner figcaption {
     margin-top: -11em;
   }
